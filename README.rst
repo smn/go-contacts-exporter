@@ -14,3 +14,12 @@ Go Contacts Exporter
 .. image:: https://readthedocs.org/projects/Go Contacts Exporter/badge/?version=latest
     :target: https://Go Contacts Exporter.readthedocs.org
     :alt: Go Contacts Exporter Docs
+
+
+To create a db::
+
+    python -m go_contacts_exporter.init_db --engine="postgresql://localhost/contacts"
+
+To export contacts to the db::
+
+    python -m go_contacts_exporter.export --token=<your token here> --engine="postgresql://localhost/contacts"
