@@ -29,15 +29,15 @@ setup(
     author_email='dev@praekeltfoundation.org',
     url='https://github.com/smn/go-contacts-exporter',
     packages=[
-        'go-contacts-exporter',
+        'go_contacts_exporter',
     ],
-    package_dir={'go-contacts-exporter':
-                 'go-contacts-exporter'},
+    package_dir={'go_contacts_exporter':
+                 'go_contacts_exporter'},
     include_package_data=True,
     install_requires=requirements,
     license="BSD",
     zip_safe=False,
-    keywords='go-contacts-exporter',
+    keywords='go_contacts_exporter',
     classifiers=[
         'Intended Audience :: Developers',
         'Natural Language :: English',
