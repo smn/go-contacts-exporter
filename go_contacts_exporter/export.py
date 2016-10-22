@@ -51,7 +51,8 @@ def export_contacts(token, cursor, engine, page, base_url):
                                msisdn=contact.get('msisdn'),
                                json=json.dumps(contact))
             trans.commit()
-            click.secho('%s' % (counter,), fg='green')
+            click.secho(
+                '%s - %s - %s' % (counter, cursor, contact['key']), fg='green')
             counter += 1
         except:
             trans.rollback()
