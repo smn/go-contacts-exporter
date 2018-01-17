@@ -57,7 +57,7 @@ def export():
 @click.option('--page/--no-page', default=True,
               help='Automatically page through with the cursor or not.')
 @click.option('--base-url', help='The Contacts API URL',
-              default='http://localhost:8300/api/v1/go/')
+              default='https://go.vumi.org/api/v1/go/')
 def contacts(token, cursor, engine, page, base_url):
     from .tables import contacts
     if not engine:
